@@ -1,0 +1,95 @@
+.peculiarities {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__list-peculiarities {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1170px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+    
+    &__item-peculiarities {
+            width: 270px;
+            margin-right: 30px;
+            list-style-type: none;
+        }
+    
+    &__item-peculiarities:last-child {
+            margin-right: 0;
+        }
+    
+    &__peculiarities-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 270px;
+            height: 120px;
+            background-color: #F5F4FA;
+            margin-bottom: 30px;
+        }
+    
+    &__peculiarities__detali-icons {
+            display: flex;
+            align-items: center;
+            fill: #212121;
+        }
+    
+    &__attention-to-detail {
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--title-text-color);
+            margin-top: 0px;
+            margin-bottom: 10px;
+    
+        }
+    
+    &__punctuality {
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--title-text-color);
+            margin-top: 0px;
+            margin-bottom: 10px;
+    
+        }
+    
+    &__planning {
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--title-text-color);
+            margin-top: 0px;
+            margin-bottom: 10px;
+    
+        }
+    
+    &__modern-technologies {
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--title-text-color);
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+    
+    &__link-description {
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--text-color);
+            margin-bottom: 0px;
+    
+        }
+
+
+}
+

@@ -1,0 +1,224 @@
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &-contanier {
+            display: flex;
+            align-items: baseline;
+            flex-direction: row;
+        }
+}
+
+
+
+.logo-footer-group {
+    /* padding: 0; */
+    margin-right: 70px;
+    padding-right: 15px;
+}
+
+.link-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 20px;
+}
+
+.link-address {
+    display: block;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+    font-style: normal;
+    margin-bottom: 9px;
+
+}
+
+.group-footer-1 {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.group-footer-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.group-mailto-footer{
+    display: block;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff99;
+    text-decoration: none;
+    transition: color var(--slow-anim) var(--fost-anim);
+
+    &:hover,
+    &:focus {
+            color: var(--brend-color);
+        }
+
+
+}
+.group-tel-footer {
+    display: block;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff99;
+    text-decoration: none;
+    transition: color var(--slow-anim) var(--fost-anim);
+
+    &:hover,
+    &:focus {
+            color: var(--brend-color);
+        }
+}
+
+.join {
+    margin-right: auto;
+
+    &-h {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+}
+
+
+
+.socials-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.socials-item-footer:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials-link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: color var(--slow-anim) var(--fost-anim);
+
+    &:hover,
+    &:focus {
+            background-color: var(--brend-color);
+        }
+    
+    &:hover .socials-icons,
+    &:focus .socials-icons {
+            fill: #FFFFFF;
+        }
+}
+
+
+
+.socials-icons-footer {
+    fill: #FFFFFF;
+
+}
+
+.subscription {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-subscription {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-mail {
+    display: flex;
+    align-items: center;
+    /* position: relative;     */
+
+}
+
+.footer-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.43;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.43;
+    padding-left: 16px;
+
+    display: flex;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 12px;
+    background-color: transparent;
+}
+
+.submit-footer {
+
+    width: 200px;
+    height: 50px;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.43;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    /* padding-right: 29px; */
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+
+}
+
+.subscription-icons-footer {
+    /* position: absolute;
+    bottom: 20%;
+    right: 28px;
+    transform: translateY(-20%); */
+    margin-left: 10px;
+
+}
