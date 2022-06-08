@@ -613,16 +613,6 @@ img {
   background-color: #1976d2;
 }
 
-.peculiarities {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .peculiarities__list-peculiarities {
   display: -webkit-box;
   display: -ms-flexbox;
