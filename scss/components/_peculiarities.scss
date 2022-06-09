@@ -1,7 +1,11 @@
 .peculiarities {
+        
+
+    @include mq (mobile) {
         padding-top: 60px;
         padding-bottom: 60px;
-    
+    }
+
     @include mq (tablet)  {
         display: flex;
         flex-wrap: wrap;
@@ -12,24 +16,28 @@
     }  
     
     @include mq (desctop) {
+        display: flex;
+        flex-wrap: wrap;
         padding-top: 94px;
         padding-bottom: 94px;
+        
     }
   
         
 
     &__list-peculiarities {
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-left: 0;
-
         @include mq (mobile) {
             display: block;
+            margin: 0;
+            padding: 0;
             width: 480px;
 
         }
         @include mq (tablet) {
             display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
             width: 768px;
         }
 
@@ -38,113 +46,154 @@
             display: flex;
             flex-wrap: wrap;
             width: 1170px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
             
         }
-        }
+    }
     
-    &__item-peculiarities {
-
-            margin-right: 30px;
+    &__item-peculiarities { 
             list-style-type: none;
 
         @include mq(mobile) {
             display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
             width: 450px;
+            &:not(:last-child){
+            margin-bottom: 30px;
+            }
         }
         @include mq(tablet) {
+            display: flex;
+            margin-right: 30px;
+            margin-bottom: 30px;
             width: 354px;
+            &:not(:nth-child(2n)) {
+            margin-right: 30px;
+
+            }
         }
         @include mq(desctop) {
             width: 270px;
-
+            margin-right: 30px;
+            list-style-type: none;
+            &:not(:last-child) {
+            margin-right: 30px;
+            }
         }    
             
-        }
+    }
     
-    &__item-peculiarities:last-child {
-            margin-right: 0;
-        }
+    // &__item-peculiarities:last-child {
+    //         margin-right: 0;
+    //     }
     
     &__peculiarities-icons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #F5F4FA;
-            margin-bottom: 30px;
-            height: 120px;
-            
-
             @include mq(mobile) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 450px;
+                height: 120px;
+                background-color: #F5F4FA;
+                margin-bottom: 30px;
                 
             }
             @include mq(tablet) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 354px;
+                height: 120px;
+                background-color: #F5F4FA;
+                margin-bottom: 30px;
                 
             }
             @include mq(desctop) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 270px;
+                height: 120px;
+                background-color: #F5F4FA;
+                margin-bottom: 30px;
                 
             }
             
         }
     
-    // &__peculiarities__detali-icons {
-    //         display: flex;
-    //         align-items: center;
-    //         fill: #212121;
-    //     }
+    &__peculiarities__detali-icons {
+            display: flex;
+            align-items: center;
+            fill: #212121;
+        }
     
-    // &__attention-to-detail {
-    //         font-weight: 700;
-    //         line-height: 1.14;
-    //         letter-spacing: 0.03em;
-    //         text-transform: uppercase;
-    //         color: var(--title-text-color);
-    //         margin-top: 0px;
-    //         margin-bottom: 10px;
+    &__attention-to-detail {
+            
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--title-text-color);
+            margin-top: 0px;
+            margin-bottom: 10px;
+
+        @include mq(mobile)   {
+            text-align: center;
+        } 
     
-    //     }
+        }
     
-    // &__punctuality {
-    //         font-weight: 700;
-    //         line-height: 1.14;
-    //         letter-spacing: 0.03em;
-    //         text-transform: uppercase;
-    //         color: var(--title-text-color);
-    //         margin-top: 0px;
-    //         margin-bottom: 10px;
+    &__punctuality {
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--title-text-color);
+            margin-top: 0px;
+            margin-bottom: 10px;
+        @include mq(mobile) {
+                text-align: center;
+            }
     
-    //     }
+        }
     
-    // &__planning {
-    //         font-weight: 700;
-    //         line-height: 1.14;
-    //         letter-spacing: 0.03em;
-    //         text-transform: uppercase;
-    //         color: var(--title-text-color);
-    //         margin-top: 0px;
-    //         margin-bottom: 10px;
+    &__planning {
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--title-text-color);
+            margin-top: 0px;
+            margin-bottom: 10px;
+        @include mq(mobile) {
+                text-align: center;
+            }
     
-    //     }
+        }
     
-    // &__modern-technologies {
-    //         font-weight: 700;
-    //         line-height: 1.14;
-    //         letter-spacing: 0.03em;
-    //         text-transform: uppercase;
-    //         color: var(--title-text-color);
-    //         margin-top: 0px;
-    //         margin-bottom: 10px;
-    //     }
+    &__modern-technologies {
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--title-text-color);
+            margin-top: 0px;
+            margin-bottom: 10px;
+        @include mq(mobile) {
+                text-align: center;
+            }
+        }
     
-    // &__link-description {
-    //         line-height: 1.71;
-    //         letter-spacing: 0.03em;
-    //         color: var(--text-color);
-    //         margin-bottom: 0px;
+    &__link-description {
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--text-color);
+            margin-bottom: 0px;
     
-    //     }
+        }
 
 
 }
