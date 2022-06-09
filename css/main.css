@@ -842,6 +842,18 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 480px) {
+  .what-are-we-doing-pading {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .what-are-we-doing-pading {
+    display: none;
+  }
+}
+
 .list-what-are-we-doing {
   display: -webkit-box;
   display: -ms-flexbox;
