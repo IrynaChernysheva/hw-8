@@ -1,44 +1,162 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: #F5F4FA;
+    @include mq (mobile) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #F5F4FA;
+    }
+
+    @include mq (tablet) {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #F5F4FA;
+
+    }
+
+    @include mq (desctop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        
+
+    }
+    
 
     &__our-team {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 1.16;
-            letter-spacing: 0.03em;
-            color: var(--title-text-color);
-            margin-top: 0px;
-            margin-bottom: 50px;
-            text-align: center;
+        @include mq (mobile) {
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 1.17;
+                letter-spacing: 0.03em;
+                color: var(--title-text-color);
+                margin-top: 0px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+        
+        @include mq (tablet) {
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 1.17;
+                letter-spacing: 0.03em;
+                color: var(--title-text-color);
+                margin-top: 0px;
+                margin-bottom: 30px;
+                text-align: center;
+        
+            }
+        
+        @include mq (desctop) {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1.16;
+                letter-spacing: 0.03em;
+                color: var(--title-text-color);
+                margin-top: 0px;
+                margin-bottom: 50px;
+                text-align: center;
         }
 
 }
+}
 
 .card {
+    @include mq (mobile) {
+        display: block;
+        padding: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+    @include mq (tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-around;
+        padding: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+    @include mq (desctop) {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin-top: 0px;
     margin-bottom: 0px;
+    }    
     
     &__member-item {
+    @include mq (mobile) {
+        background-color: #ffffff;
+        width: 450px;
+        margin-bottom: 30px;
+        // height: 622px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        list-style-type: none;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+    }
+    @include mq (tablet) {
+        // display: flex;
+        // flex-wrap: wrap;
+        background-color: #ffffff;
+        width: 354px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        // height: 622px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        list-style-type: none;
+        &:not(:nth-child(2n)) {
+                margin-right: 30px;
+        }
+    }
+    @include mq (desctop) {
             background-color: #ffffff;
             margin-right: 30px;
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
             list-style-type: none;
-        }
+    }
+    &__member-img {
+    @include mq (mobile) {
+        width: 450px;
+        height: 460px;
+    }
+    @include mq (tablet) {
+        width: 354px;
+        height: 374px;
+    }
+    @include mq (desctop) {
+        width: 270px;
+        height: 260px;
+    }
+
+    }
+}
     
-    &__member-item:last-child {
-            margin-right: 0;
+    // &__member-item:last-child {
+    //         margin-right: 0;
     
-        }
+    //     }
     
     &__member-group {
+        @include mq (mobile) {
+            padding-top: 30px;
+            padding-bottom: 24px;
+        }
+        @include mq (tablet) {
+            padding-top: 30px;
+            padding-bottom: 24px;
+        }
+        @include mq (desctop){
             padding-top: 30px;
             padding-bottom: 30px;
+        }
         }
     
     &__member-title {
