@@ -3,10 +3,17 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
+    width: 370px;
 
     color: #212121;
+
+    @include mq (desktop) {
+    line-height: 1.15;
+    width: 448px;
+
+    }
 }
 
 .form-field {
@@ -50,7 +57,7 @@
 }
 
 .form-input {
-    width: 448px;
+    width: 370px;
     height: 40px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -66,6 +73,9 @@
         border: 1px solid #2196F3;
     
         }
+    @include mq (desktop)    {
+        width: 448px;
+    }
 }
 
 
@@ -109,15 +119,13 @@
 
 }
 
-
-
 .form-checkbox-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 16px;
     height: 15px;
-    margin-right: 9px;
+    margin-right: 8px;
     outline: 2px solid var(--title-text-color);
     outline-offset: -2px;
     border-radius: 2px;
@@ -146,16 +154,25 @@
 }
 
 .form-check-policy {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
 
     color: #757575;
+    @include mq (desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .terms {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: #2196F3;
+
+    @include mq (desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+        }
 }
 
 

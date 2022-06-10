@@ -1,12 +1,12 @@
 .hero {
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
     margin-right: auto;
     margin-left: auto;
     background-color: #2F303A;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/hero/Img.jpg);
@@ -14,18 +14,36 @@
     background-position: center;
     background-size: cover;
 
+    @include mq (tablet) {
+        max-width: 768px;
+        height: 400px;
+    }
+    @include mq (desktop) {
+        max-width: 1600px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    
+
     &-title {
             font-weight: 900;
-            font-size: 44px;
-            line-height: 1.36;
+            font-size: 26px;
+            line-height: 1.61;
             letter-spacing: 0.06em;
             text-transform: uppercase;
             color: var(--primary-white-color);
             margin-top: 0px;
             margin-bottom: 30px;
-            width: 696px;
+            width: 360px;
             margin-right: auto;
             margin-left: auto;
+
+        @include mq (desktop) {
+            font-size: 44px;
+            line-height: 1.36;
+            width: 696px;
+        }
         }
     
     &-navigtion {

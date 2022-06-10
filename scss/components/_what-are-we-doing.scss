@@ -15,12 +15,10 @@
             flex-wrap: wrap;
             padding-top: 0;
             padding-bottom: 94px;
-        @include mq(mobile)   {
-            display: none;
-        } 
-        @include mq(tablet) {
-            display: none;
-        }
+            
+            @include mq (not-desktop) {
+                display: none;
+            }
         }
 }
 
@@ -42,6 +40,11 @@
 
 .going {
     position: relative;
+    margin-right: 30px;
+
+      &:last-child {
+    margin-right: 0;
+    }
 
 }
 
