@@ -12,6 +12,19 @@
 
 .logo-blue {
     font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--brend-color);
+    text-decoration: none;
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    @include mq(desktop){
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -21,9 +34,21 @@
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 24px;
+    }
+    
 }
 
 .logo-header {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em; 
+    color: #000000;
+    text-decoration: none;
+
+    @include mq(desktop) {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -31,6 +56,8 @@
     letter-spacing: 0.03em;
     color: #000000;
     text-decoration: none;
+    }
+   
 }
 
 
@@ -41,6 +68,13 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+
+    @include mq(mobile-only) {
+    display: none;
+    }
+   @include mq(tablet){
+    margin-right: 84px;
+   }
 }
 
 .navigtion-item {
@@ -48,7 +82,7 @@
     margin-right: 50px;
     list-style-type: none;
 
-    &-item:last-child {
+    &:last-child {
             margin-right: 0px;
         }
 }
@@ -93,12 +127,28 @@
 }
 
 .header-gruop-list {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    @include mq(mobile-only) {
+        display: none;
+        }
+    @include mq(tablet)  {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }  
+    @include mq(desktop) {
+        display: flex;
+        align-items: flex-start;
+        list-style-type: none;
+        flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+
+    }
+    
+    
 }
 
 .header-icons {
@@ -116,9 +166,18 @@
     color: var(--text-color);
     text-decoration: none;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     transition: color var(--slow-anim) var(--fost-anim);
+    @include mq(tablet) {
+        padding: 0;
+        margin-bottom: 10px;
+
+    }
+    @include mq(desktop) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin: 0;
+    }
 }
 
 .group-tel {
@@ -130,9 +189,20 @@
     letter-spacing: 0.02em;
     color: var(--text-color);
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     transition: color var(--slow-anim) var(--fost-anim);
+    @include mq(tablet) {
+        justify-content: flex-start;
+            padding: 0;
+            margin: 0;
+    
+        }
+    
+    @include mq(desktop) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            
+        }
 
     &.current {
             color: var(--brend-color);
@@ -152,4 +222,26 @@
 .group-tel:focus {
     color: var(--brend-color);
 }
-
+// .container-mobile-menu {
+//     @include mq(tablet-only) {
+//             display: none;
+//         }
+    
+//     @include mq(not-desktop) {
+//             display: none;
+// }
+// }
+.menu-toggle {
+    // position: fixed;
+    // position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: transparent;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        fill: var(--brend-color);
+    }
+        
+}
