@@ -75,6 +75,9 @@
    @include mq(tablet){
     margin-right: 84px;
    }
+   @include mq(desktop) {
+    margin-right: 305px;
+   }
 }
 
 .navigtion-item {
