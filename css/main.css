@@ -176,18 +176,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .navigtion-list {
-    margin-right: 84px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .navigtion-list {
-    margin-right: 305px;
-  }
-}
-
 .navigtion-item {
   display: block;
   margin-right: 50px;
@@ -237,6 +225,12 @@ img {
 
 .group-1 {
   margin-right: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .group-1 {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -317,6 +311,7 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
     margin: 0;
+    margin-right: 30px;
   }
 }
 
@@ -393,13 +388,55 @@ img {
   height: 100vw;
   background-color: #fff;
   z-index: 100;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
 }
 
-.menu-container.is-open {
-  -webkit-transform: translateX(1);
-          transform: translateX(1);
+.menu-container .menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: #fff;
+  z-index: 100;
+}
+
+@media (min-widht: 768px) {
+  .menu-container .menu-toggle {
+    display: none;
+  }
+}
+
+@media (min-widht: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+  border: transparent;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: fill var(--slow-anim) var(--fost-anim);
+  transition: fill var(--slow-anim) var(--fost-anim);
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: var(--brend-color);
 }
 
 .hero {
@@ -1225,6 +1262,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .card__member-item {
+    width: 450px;
     margin-bottom: 30px;
   }
   .card__member-item:last-child {
@@ -1234,6 +1272,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .card__member-item {
+    width: 354px;
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -1247,6 +1286,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .card__member-item {
+    width: 270px;
     margin-right: 30px;
   }
   .card__member-item:last-child {
@@ -1624,7 +1664,7 @@ img {
 @media screen and (min-width: 1200px) {
   .logo-footer-group {
     margin-right: 70px;
-    padding-right: 15px;
+    margin-bottom: 0;
   }
 }
 
@@ -1740,6 +1780,7 @@ img {
 @media screen and (min-width: 1200px) {
   .join {
     margin-right: auto;
+    margin-bottom: 0;
   }
 }
 

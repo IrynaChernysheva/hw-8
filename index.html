@@ -87,33 +87,7 @@
             ></path>
           </svg>
         </button>
-
-        <!-- <ul class="menu">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a class="" href="tel:380961111111">+38 096 111 11 11</a>
-          </li>
-          <li>
-            <a class="" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-           <a class="" href="Instagram">Instagram</a> 
-          </li>
-          <li>
-            <a class="" href="Twitter">Twitter</a>
-          </li>
-          <li>
-           <a class="" href="Facebook">Facebook</a> 
-          </li>
-          <li>
-            <a class="" href="LinkedIn">LinkedIn</a>
-          </li> -->
+       
         </ul>
       </div>
     </header> 
@@ -245,10 +219,10 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!--особенности-->
-       <section class="peculiarities ">
+      <section class="peculiarities ">
         <div class="contanier peculiarities-contanier">
           <h2 class="peculiarities__peculiarities-title" hidden>Особенности</h2>
           <ul class="peculiarities__list-peculiarities">
@@ -311,33 +285,92 @@
           </div>
           <ul class="list-what-are-we-doing">
             <li class="going">
-              <img
+               <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/main/class/box-1_lg.webp    1x,
+                      ./images/main/class/box-1_lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/main/class/box-1_lg.jpg    1x,
+                      ./images/main/class/box-1_lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  
+                  <img             
                 class="what-are-we-doing-pading-img"
-                src="./images/main/class/box-1.jpg"
+                src="./images/main/class/box-1_lg.jpg"
                 alt="программное обеспечение "
                 width="370"
-                height="294"
-              />
+                loading="lazy"
+                    />
+                </picture>
               <p class="clarification">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="going">
+              <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/main/class/box-2_lg.webp    1x,
+                      ./images/main/class/box-2_lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/main/class/box-2_lg.jpg    1x,
+                      ./images/main/class/box-2_lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
               <img
                 class="what-are-we-doing-pading-img"
-                src="./images/main/class/box-2.jpg"
+                src="./images/main/class/box-2_lg.jpg"
                 alt="тестирование мобильного приложения"
                 width="370"
                 height="294"
-              />
+                loading="lazy"
+                    />
+                </picture>
+            
               <p class="clarification">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="going">
+              <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/main/class/box-3_lg.webp    1x,
+                      ./images/main/class/box-3_lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/main/class/box-3_lg.jpg    1x,
+                      ./images/main/class/box-3_lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
               <img
                 class="what-are-we-doing-pading-img"
-                src="./images/main/class/box-3.jpg"
+                src="./images/main/class/box-3_lg.jpg"
                 alt="работа с палитрой"
                 width="370"
                 height="294"
-              />
+                loading="lazy"
+                    />
+                </picture>
+            
               <p class="clarification">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
             </li>
           </ul>
@@ -349,20 +382,65 @@
           <h2 class="team__our-team">Наша команда</h2>
           <ul class="card">
             <li class="card__member-item">
-              <img
-                class="card__member-img"
-                srcset="./images/main/team-1-270.jpg 270w,
-                ./images/main/team-1-354.jpg 354w,
-                ./images/main/team-1-450.jpg 450w,
-                "
-                sizes="(min-width: 1200px) 270px,
-                 (min-width: 768px) 354px,
-                  (max-width: 767px) 450px, 100vw"
-                src="./images/main/team/team-1_sm.jpg"
-                alt="Игорь Демьяненко"
-                width="450"
-                height="460"
-              />
+                  <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/main/team/team-1_lg.webp    1x,
+                      ./images/main/team/team-1_lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/main/team/team-1_lg.jpg    1x,
+                      ./images/main/team/team-1_lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/main/team/team-1_md.webp    1x,
+                      ./images/main/team/team-1_md@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/main/team/team-1_md.jpg    1x,
+                      ./images/main/team/team-1_md@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/main/team/team-1_sm.webp    1x,
+                      ./images/main/team/team-1_sm@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/main/team/team-1_sm.jpg    1x,
+                      ./images/main/team/team-1_sm@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                    <img
+                              class="card__member-img"
+                              src="./images/main/team/team-1_sm.jpg"
+                              alt="Игорь Демьяненко"
+                              width="450"
+                              height="460"
+                              loading="lazy"
+                    />
+                </picture>
+            
               <div class="card__member-group">
                 <h3 class="card__member-title">Игорь Демьяненко</h3>
                 <p class="card__member-position" lang="en">Product Designer</p>
@@ -440,13 +518,64 @@
               </div>
             </li>
             <li class="card__member-item">
-              <img
-                class="card__member-img"
-                src="./images/main/team/team-2_sm.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/main/team/team-2_lg.webp    1x,
+      ./images/main/team/team-2_lg@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/main/team/team-2_lg.jpg    1x,
+      ./images/main/team/team-2_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/main/team/team-2_md.webp    1x,
+      ./images/main/team/team-2_md@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/main/team/team-2_md.jpg    1x,
+      ./images/main/team/team-2_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/main/team/team-2_sm.webp    1x,
+      ./images/main/team/team-2_sm@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/main/team/team-2_sm.jpg    1x,
+      ./images/main/team/team-2_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+    <img
+              class="card__member-img"
+              src="./images/main/team/team-2_sm.jpg"
+              alt="Ольга Репина"
+              width="450"
+              height="460"
+              loading="lazy"
+    />
+</picture>
               <div class="card__member-group">
                 <h3 class="card__member-title">Ольга Репина</h3>
                 <p class="card__member-position" lang="en">
@@ -526,13 +655,64 @@
               </div>
             </li>
             <li class="card__member-item">
+  <picture>
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/main/team/team-3_lg.webp    1x,
+      ./images/main/team/team-3_lg@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/main/team/team-3_lg.jpg    1x,
+      ./images/main/team/team-3_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/main/team/team-3_md.webp    1x,
+      ./images/main/team/team-3_md@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/main/team/team-3_md.jpg    1x,
+      ./images/main/team/team-3_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/main/team/team-3_sm.webp    1x,
+      ./images/main/team/team-3_sm@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/main/team/team-3_sm.jpg    1x,
+      ./images/main/team/team-3_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
               <img
                 class="card__member-img"
                 src="./images/main/team/team-3_sm.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
+                loading="lazy"
               />
+</picture>
               <div class="card__member-group">
                 <h3 class="card__member-title">Николай Тарасов</h3>
                 <p class="card__member-position" lang="en">Marketing</p>
@@ -610,13 +790,64 @@
               </div>
             </li>
             <li class="card__member-item">
+  <picture>
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/main/team/team-4_lg.webp    1x,
+      ./images/main/team/team-4_lg@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/main/team/team-4_lg.jpg    1x,
+      ./images/main/team/team-4_lg@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/main/team/team-4_md.webp    1x,
+      ./images/main/team/team-4_md@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/main/team/team-4_md.jpg    1x,
+      ./images/main/team/team-4_md@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/main/team/team-4_sm.webp    1x,
+      ./images/main/team/team-4_sm@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/main/team/team-4_sm.jpg    1x,
+      ./images/main/team/team-4_sm@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
               <img
                 class="card__member-img"
                 src="./images/main/team/team-4_sm.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
+                loading="lazy"
               />
+  </picture>
               <div class="card__member-group">
                 <h3 class="card__member-title">Михаил Ермаков</h3>
                 <p class="card__member-position" lang="en">UI Designer</p>
@@ -853,7 +1084,14 @@
         
     </footer>
 
+    
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-meny.js"></script>
   </body>
 </html>

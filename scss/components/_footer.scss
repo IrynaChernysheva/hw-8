@@ -30,11 +30,12 @@
     }
     @include mq (tablet) {
         margin-right: 165px;
+        
     }
 
     @include mq (desktop) {
         margin-right: 70px;
-        padding-right: 15px;
+        margin-bottom: 0;
     }
     
 }
@@ -71,7 +72,7 @@
     @include mq (desktop) {
         font-size: 26px;
         line-height: 1.19;
-
+        
     }
     
 }
@@ -148,6 +149,7 @@
 
     @include mq (desktop) {
     margin-right: auto;
+    margin-bottom: 0;
     }
 
     &-h {

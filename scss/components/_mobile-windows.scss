@@ -6,7 +6,15 @@
     height: 100vw;
     background-color: #fff;
     z-index: 100;
-    transform: translateX(100%);
+    .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: #fff;
+    z-index: 100;
+    // transform: translateX(100%);
 
 //     @include mq(tablet-only) {
 //             display: none;
@@ -16,5 +24,48 @@
 //   }
 }
 .menu-container.is-open {
-   transform: translateX(1);
+//    transform: translateX(1);
+}
+@media (min-widht: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+//     @include mq(tablet-only) {
+//             display: none;
+//         }
+//     @include mq(not-desktop) {
+//       display: none;
+//   }
+}
+.menu-container.is-open {
+//    transform: translateX(1);
+}
+@media (min-widht: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+.menu-toggle {
+    position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        border: transparent;
+        padding: 0;
+    
+        cursor: pointer;
+        transition: fill var(--slow-anim) var(--fost-anim);
+    
+        &:hover,
+        &:focus {
+            fill: var(--brend-color);
+        }
+
 }

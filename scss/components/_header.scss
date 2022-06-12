@@ -72,12 +72,7 @@
     @include mq(mobile-only) {
     display: none;
     }
-   @include mq(tablet){
-    margin-right: 84px;
-   }
-   @include mq(desktop) {
-    margin-right: 305px;
-   }
+    
 }
 
 .navigtion-item {
@@ -127,6 +122,9 @@
 
 .group-1 {
     margin-right: 50px;
+    @include mq (tablet) {
+        margin-right: 0;
+    }
 }
 
 .header-gruop-list {
@@ -180,6 +178,7 @@
         padding-top: 32px;
         padding-bottom: 32px;
         margin: 0;
+        margin-right: 30px;
     }
 }
 
@@ -248,3 +247,5 @@
     }
         
 }
+
+
