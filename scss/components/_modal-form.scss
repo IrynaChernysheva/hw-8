@@ -6,13 +6,19 @@
     line-height: 1.5;
     text-align: center;
     width: 370px;
+    
 
     color: #212121;
 
+    @media screen and (max-width:478px) {
+            width: 96%;
+        }
+    
     @include mq (desktop) {
-    line-height: 1.15;
-    width: 448px;
-    }
+        line-height: 1.15;
+        width: 448px;
+        }
+                       
 }
 
 .form-field {
@@ -24,6 +30,7 @@
 
     position: relative;
     margin-bottom: 10px;
+    width: 100%;
 
     &-comment {
             display: flex;
@@ -56,8 +63,9 @@
 }
 
 .form-input {
-    width: 370px;
+    
     height: 40px;
+    width: 100%;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -72,9 +80,7 @@
         border: 1px solid #2196F3;
     
         }
-    @include mq (desktop)    {
-        width: 448px;
-    }
+        
 }
 
 

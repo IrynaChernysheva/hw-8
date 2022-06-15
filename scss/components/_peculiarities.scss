@@ -25,20 +25,20 @@
 
         @include mq(mobile) {
             display: block;
-            width: 450px;
+            // width: 450px;
         }
 
         @include mq (tablet) {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            width: 738px;
+            // width: 738px;
         }
         @include mq (desktop) {
             display: flex;
             flex-wrap: nowrap;
             justify-content: flex-start;
-            width: 1170px;
+            // width: 1170px;
         }
     }
 
@@ -114,6 +114,7 @@
         color: var(--title-text-color);
         margin-top: 0px;
         margin-bottom: 10px;
+        text-align: center;
 
     }
 
@@ -125,6 +126,7 @@
         color: var(--title-text-color);
         margin-top: 0px;
         margin-bottom: 10px;
+        text-align: center;
 
     }
 
@@ -136,6 +138,7 @@
         color: var(--title-text-color);
         margin-top: 0px;
         margin-bottom: 10px;
+        text-align: center;
 
     }
 
@@ -147,6 +150,7 @@
         color: var(--title-text-color);
         margin-top: 0px;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     &__link-description {

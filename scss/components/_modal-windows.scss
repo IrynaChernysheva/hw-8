@@ -21,7 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    min-width: 450px;
+    // min-width: 528px;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
@@ -31,9 +31,17 @@
     border-radius: 4px;
     transition: transform 300ms ease-in-out 200ms,
         opacity 300ms ease-in-out 200ms;
-    @include mq (desktop)   {
-        min-width: 528px;
+
+    @media screen and (max-width:478px)  {
+        width: 96%;
+    }  
+       
+    @include mq (tablet-only)   {
+        min-width: 450px;
     } 
+    @include mq (desktop) {
+        min-width: 528px;
+    }
 
 }
 

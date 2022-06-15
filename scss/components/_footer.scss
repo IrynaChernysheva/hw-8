@@ -24,6 +24,9 @@
 
 .logo-footer-group {
     text-align: center;
+    @media screen and (max-width:478px){
+        margin-bottom: 60px;
+    }
 
     @include mq (mobile) {
         margin-bottom: 60px;
@@ -35,7 +38,8 @@
 
     @include mq (desktop) {
         margin-right: 70px;
-        margin-bottom: 0;
+        // padding-right: 15px;
+       margin-bottom: 0;
     }
     
 }
@@ -234,10 +238,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     @include mq (desktop) {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
     /* position: relative;     */
     }
 }
@@ -255,6 +261,7 @@
 }
 
 .footer-input {
+   
     width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -267,15 +274,23 @@
     line-height: 1.43;
     padding-left: 16px;
     
+    
     display: flex;
     align-items: center;
     
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 20px;
     background-color: transparent;
+
+    @media screen and (max-width:478px) {
+        width: 98%;
+    }
+
    
     @include mq (desktop) {
         width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
     }
  }
     

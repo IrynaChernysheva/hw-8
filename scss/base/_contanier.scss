@@ -5,21 +5,30 @@
 
     margin-left: auto;
     margin-right: auto; 
-
-// mobile
-    @media screen and (mix-width: 480px) {
-            width: 480px;
+    @include mq (mobile) {
+        width: 480px;
     }
-// tablet
-    @media screen and (min-widht: 768px) {
+    @include mq (tablet) {
         width: 768px;
-        
     }
-// desctop
-    @media screen and (min-widht: 1200px) {
+    @include mq (desktop) {
         width: 1200px;
-        
     }
+
+// // mobile
+//     @media screen and (mix-width: 480px) {
+//             width: 480px;
+//     }
+// // tablet
+//     @media screen and (min-widht: 768px) {
+//         width: 768px;
+        
+//     }
+// // desktop
+//     @media screen and (min-widht: 1200px) {
+//         width: 1200px;
+        
+//     }
     
         
 }

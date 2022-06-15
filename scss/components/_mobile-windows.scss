@@ -64,6 +64,9 @@
 
     transition: transform 400ms ease-in;
     z-index: 90;
+    @include mq (tablet) {
+        display: none;
+    }
 }
 
 .mobile-menu.is-open {
@@ -99,6 +102,9 @@
     content: "";
     color: var(--brend-color);
 
+}
+.mobile-menu-navigtion-link.current {
+    color: var(--brend-color);
 }
 
 .mobile-menu-font {

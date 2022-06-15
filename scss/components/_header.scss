@@ -19,9 +19,14 @@
     letter-spacing: 0.03em;
     color: var(--brend-color);
     text-decoration: none;
-    margin-right: 88px;
+   
     padding-top: 26px;
     padding-bottom: 26px;
+    
+    @include mq (tablet) {
+        margin-right: 88px;
+
+    }
 
     @include mq(desktop){
     font-family: 'Raleway';
@@ -112,6 +117,10 @@
     border-radius: 2px;
 
 }
+.navigtion-link.current {
+    color: var(--brend-color);
+}
+
 
 
 .header-gruop {
@@ -122,12 +131,18 @@
 
 .group-1 {
     margin-right: 50px;
+
     @include mq (tablet) {
         margin-right: 0;
+        margin-bottom: 10px;
+    }
+    @include mq (desktop) {
+        margin-right: 30px;
     }
 }
 
 .header-gruop-list {
+    
     @include mq(mobile-only) {
         display: none;
         }
@@ -172,14 +187,15 @@
     transition: color var(--slow-anim) var(--fost-anim);
     @include mq(tablet) {
         padding: 0;
-        margin-bottom: 10px;
+        padding-top: 21px;
+        
 
     }
     @include mq(desktop) {
         padding-top: 32px;
         padding-bottom: 32px;
         margin: 0;
-        margin-right: 30px;
+        // margin-right: 30px;
     }
 }
 
@@ -197,6 +213,7 @@
     @include mq(tablet) {
         justify-content: flex-start;
             padding: 0;
+            padding-bottom: 21px;
             margin: 0;
     
         }
