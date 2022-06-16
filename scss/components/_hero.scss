@@ -14,16 +14,15 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url(../images/hero/Header_sm.jpg);
-        background-image: -webkit-image-set(url(../images/hero/Header_sm.webp) 1x),
-        linear-gradient(to right, rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4));
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),-webkit-image-set(url(../images/hero/Header_sm.webp) 1x);
     @include mq (retina) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                 url(../images/hero/Header_sm@2x.jpg);
-        background-image: -webkit-image-set(url(../images/hero/Header_sm@2x.webp) 2x),
-                linear-gradient(to right, rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4));
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),-webkit-image-set(url(../images/hero/Header_sm@2x.webp) 2x);
+                
         }
 
     @include mq (tablet) {
@@ -32,17 +31,17 @@
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                 url(../images/hero/Header_md.jpg);
-        background-image: -webkit-image-set(url(../images/hero/Header_dm.webp) 1x),
-                linear-gradient(to right, rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4));
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../images/hero/Header_dm.webp) 1x);
+                
     @include mq (retina) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
                     url(../images/hero/Header_md@2x.jpg);
             }
-        background-image: -webkit-image-set(url(../images/hero/Header_md@2x.webp) 2x),
-        linear-gradient(to right, rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4));
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),-webkit-image-set(url(../images/hero/Header_md@2x.webp) 2x);
+        
     }
     @include mq (desktop) {
         max-width: 1600px;
@@ -52,17 +51,16 @@
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                 url(../images/hero/Header_lg.jpg);
-        background-image: -webkit-image-set(url(../images/hero/Header_lg.webp) 1x),
-                linear-gradient(to right, rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4));
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),-webkit-image-set(url(../images/hero/Header_lg.webp) 1x);
     @include mq (retina) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                 url(../images/hero/Header_lg@2x.jpg);
             }
-        background-image: -webkit-image-set(url(../images/hero/Header_lg@2x.webp) 2x),
-                 linear-gradient(to right, rgba(47, 48, 58, 0.4),
-                     rgba(47, 48, 58, 0.4));
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)) -webkit-image-set(url(../images/hero/Header_lg@2x.webp) 2x);
+                 
     }
     
 
@@ -79,7 +77,9 @@
             margin-right: auto;
             margin-left: auto;
             
-   
+        @include mq (tablet) {
+            width: 360px;
+        }
 
         @include mq (desktop) {
             font-size: 44px;

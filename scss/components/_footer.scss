@@ -11,7 +11,8 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
+            align-items: baseline
         }
             
         @include mq (desktop){
@@ -31,10 +32,10 @@
     @include mq (mobile) {
         margin-bottom: 60px;
     }
-    @include mq (tablet) {
-        margin-right: 165px;
+    // @include mq (tablet) {
+    //     margin-right: 165px;
         
-    }
+    // }
 
     @include mq (desktop) {
         margin-right: 70px;
@@ -222,6 +223,7 @@
     @include mq (desktop) {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     }
 }
 .subscription {

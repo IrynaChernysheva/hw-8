@@ -13,6 +13,8 @@
 
     cursor: pointer;
     z-index: 100;
+    
+    
     @include mq (tablet) {
         display: none;
     }

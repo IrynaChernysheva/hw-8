@@ -1,10 +1,12 @@
 .header {
     border-bottom: 1px solid #ECECEC;
+    
 
     &-contanier {
             display: flex;
             align-items: center;
             fill: currentColor;
+            
         }
 }
 
@@ -138,6 +140,7 @@
     }
     @include mq (desktop) {
         margin-right: 30px;
+        margin-bottom: 0;
     }
 }
 
