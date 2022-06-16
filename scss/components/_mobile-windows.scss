@@ -1,6 +1,7 @@
 
 .mobile-menu-btn {
-    position: relative;
+    // position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,6 +30,7 @@
         fill: var(--brend-color);
     }
 }
+
 
 .mobile-menu-btn.is-open .icon-open {
     opacity: 0;

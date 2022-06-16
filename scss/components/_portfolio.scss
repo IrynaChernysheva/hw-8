@@ -306,17 +306,23 @@
             opacity: 1;
             transform: translateY(0);
         }
+    @include mq(tablet-only) {
+        display: flex;
+        flex-direction: column;
+         }
 }
 
 .portfolio-group {
     
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
     border: 1px solid #EEEEEE;
-    flex-grow: 1;
-    
+
+    @include mq (tablet-only) {
+        flex-grow: 1;
+    }    
     
 }
 
