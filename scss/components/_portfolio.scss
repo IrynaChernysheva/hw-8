@@ -295,9 +295,11 @@
 }
 
 .sending {
-    text-decoration: none;
+    
     display: flex;
     flex-direction: column;
+    height: 100%;
+    text-decoration: none;
 
     &:hover .product-action,
     &:focus .product-action {
@@ -307,12 +309,14 @@
 }
 
 .portfolio-group {
-    flex-grow: 1;
+    
     padding-left: 22px;
     padding-right: 22px;
     padding-top: 20px;
     padding-bottom: 20px;
     border: 1px solid #EEEEEE;
+    flex-grow: 1;
+    
     
 }
 
