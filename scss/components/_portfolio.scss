@@ -296,6 +296,8 @@
 
 .sending {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
 
     &:hover .product-action,
     &:focus .product-action {
@@ -305,7 +307,7 @@
 }
 
 .portfolio-group {
-    // flex-grow: 1;
+    flex-grow: 1;
     padding-left: 22px;
     padding-right: 22px;
     padding-top: 20px;
@@ -315,6 +317,7 @@
 }
 
 .portfolio-title {
+    
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -342,6 +345,7 @@
 .blok-insert {
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
 .product-action {
