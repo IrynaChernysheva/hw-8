@@ -1198,6 +1198,12 @@ img {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 478px) {
+  .peculiarities__attention-to-detail {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .peculiarities__attention-to-detail {
     text-align: center;
@@ -1224,6 +1230,12 @@ img {
   color: var(--title-text-color);
   margin-top: 0px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 478px) {
+  .peculiarities__punctuality {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1254,6 +1266,12 @@ img {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 478px) {
+  .peculiarities__planning {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .peculiarities__planning {
     text-align: center;
@@ -1280,6 +1298,12 @@ img {
   color: var(--title-text-color);
   margin-top: 0px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 478px) {
+  .peculiarities__modern-technologies {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1857,7 +1881,7 @@ img {
 }
 
 .scroll__permanent-clients-icons:hover,
-.scroll__peculiarities-icons:focus {
+.scroll__permanent-clients-icons:focus {
   border: 1px solid var(--brend-color);
 }
 
@@ -2165,6 +2189,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 478px) {
+  .footer-mail {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2512,18 +2542,6 @@ img {
 
 @media screen and (min-width: 480px) {
   .portfolio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -2535,10 +2553,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 0;
@@ -2606,7 +2620,7 @@ img {
     transition: box-shadow var(--slow-anim) var(--fost-anim), -webkit-box-shadow var(--slow-anim) var(--fost-anim);
   }
   .portfolio-list:nth-child(2n) {
-    margin-right: -30px;
+    margin-right: 0px;
   }
   .portfolio-list:last-child {
     margin-bottom: 0;
@@ -2672,7 +2686,6 @@ img {
 }
 
 .portfolio-group {
-  height: 100%;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -2707,7 +2720,6 @@ img {
 .blok-insert {
   position: relative;
   overflow: hidden;
-  height: 100%;
 }
 
 .product-action {

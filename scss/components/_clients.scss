@@ -118,6 +118,7 @@
     &:hover .scroll__photo-icons,
     &:focus .scroll__photo-icons {
             fill: var(--brend-color);
+            
         }
     @include mq (mobile) {
         width: 210px;
@@ -138,7 +139,7 @@
 }
 
 .scroll__permanent-clients-icons:hover,
-.scroll__peculiarities-icons:focus {
-    border: 1px solid var(--brend-color)
+.scroll__permanent-clients-icons:focus {
+    border: 1px solid var(--brend-color);
 }
 

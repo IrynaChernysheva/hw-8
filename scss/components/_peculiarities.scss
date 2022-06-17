@@ -121,6 +121,10 @@
         color: var(--title-text-color);
         margin-top: 0px;
         margin-bottom: 10px;
+        @media screen and (max-width:478px) {
+            text-align: center;
+        }
+        
     @include mq (mobile) {
             text-align: center;
         }
@@ -144,6 +148,9 @@
         color: var(--title-text-color);
         margin-top: 0px;
         margin-bottom: 10px;
+         @media screen and (max-width:478px) {
+            text-align: center;
+        }
         @include mq (mobile) {
                 text-align: center;
             }
@@ -166,6 +173,9 @@
         color: var(--title-text-color);
         margin-top: 0px;
         margin-bottom: 10px;
+         @media screen and (max-width:478px) {
+            text-align: center;
+        }
         @include mq (mobile) {
             text-align: center;
         }
@@ -188,6 +198,9 @@
             color: var(--title-text-color);
             margin-top: 0px;
             margin-bottom: 10px;
+        @media screen and (max-width:478px) {
+            text-align: center;
+        }
         @include mq (mobile) {
             text-align: center;
             }
