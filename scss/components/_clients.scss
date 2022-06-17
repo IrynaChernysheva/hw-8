@@ -112,7 +112,7 @@
     border: 1px solid #AFB1B8;
     outline: transparent;
     border-radius: 4px;
-    transition: color var(--slow-anim) var(--fost-anim),
+    transition: fill var(--slow-anim) var(--fost-anim),
         border-color var(--slow-anim) var(--fost-anim);
 
     &:hover .scroll__photo-icons,
@@ -131,6 +131,10 @@
     }
 
 }
+.scroll__permanent-clients-icons:hover,
+.scroll__permanent-clients-icons:focus {
+    border: 1px solid var(--brend-color);
+}
 
 .scroll__photo-icons {
     display: flex;
@@ -138,8 +142,5 @@
     fill: #AFB1B8;
 }
 
-.scroll__permanent-clients-icons:hover,
-.scroll__permanent-clients-icons:focus {
-    border: 1px solid var(--brend-color);
-}
+
 
