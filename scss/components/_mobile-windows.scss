@@ -1,12 +1,14 @@
 
 .mobile-menu-btn {
-    // position: relative;
-    position: fixed;
+    
+    position: relative;
+    // position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
     background-color: transparent;
+    
 
     width: 40px;
     height: 40px;
@@ -20,20 +22,26 @@
         display: none;
     }
 }
+.mobile-menu-btn.is-open {
+    position: fixed;
+}
 
 .mobile-menu-btn .icon-open {
+
     opacity: 1;
     transition: fill var(--fost-anim);
 
-    &:hover,
-    &:focus {
-        fill: var(--brend-color);
-    }
+    // &:hover,
+    // &:focus {
+    //     fill: var(--brend-color);
+    // }
 }
 
 
 .mobile-menu-btn.is-open .icon-open {
     opacity: 0;
+    
+    
 }
 
 .mobile-menu-btn .icon-close {
@@ -44,10 +52,16 @@
     opacity: 1;
     transition: fill var(--fost-anim);
 
-    &:hover,
-    &:focus {
-        fill: var(--brend-color);
-    }
+    // &:hover,
+    // &:focus {
+    //     fill: var(--brend-color);
+    // }
+}
+.mobile-menu-btn.is-open:hover {
+    fill: var(--brend-color);
+}
+.mobile-menu-btn:hover {
+    fill: var(--brend-color);
 }
 
 

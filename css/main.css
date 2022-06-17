@@ -389,7 +389,7 @@ img {
 }
 
 .mobile-menu-btn {
-  position: fixed;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,14 +414,14 @@ img {
   }
 }
 
+.mobile-menu-btn.is-open {
+  position: fixed;
+}
+
 .mobile-menu-btn .icon-open {
   opacity: 1;
   -webkit-transition: fill var(--fost-anim);
   transition: fill var(--fost-anim);
-}
-
-.mobile-menu-btn .icon-open:hover, .mobile-menu-btn .icon-open:focus {
-  fill: var(--brend-color);
 }
 
 .mobile-menu-btn.is-open .icon-open {
@@ -438,7 +438,11 @@ img {
   transition: fill var(--fost-anim);
 }
 
-.mobile-menu-btn.is-open .icon-close:hover, .mobile-menu-btn.is-open .icon-close:focus {
+.mobile-menu-btn.is-open:hover {
+  fill: var(--brend-color);
+}
+
+.mobile-menu-btn:hover {
   fill: var(--brend-color);
 }
 
@@ -2632,6 +2636,7 @@ img {
 }
 
 .portfolio-group {
+  height: 100%;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;

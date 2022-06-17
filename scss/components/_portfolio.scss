@@ -313,7 +313,7 @@
 }
 
 .portfolio-group {
-    
+    height: 100%;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 20px;
@@ -321,6 +321,7 @@
     border: 1px solid #EEEEEE;
 
     @include mq (tablet-only) {
+        
         flex-grow: 1;
     }    
     
