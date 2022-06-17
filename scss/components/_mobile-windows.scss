@@ -57,10 +57,12 @@
     //     fill: var(--brend-color);
     // }
 }
-.mobile-menu-btn.is-open:hover {
+.mobile-menu-btn.is-open:hover,
+.mobile-menu-btn.is-open:focus {
     fill: var(--brend-color);
 }
-.mobile-menu-btn:hover {
+.mobile-menu-btn:hover,
+.mobile-menu-btn:focus {
     fill: var(--brend-color);
 }
 
